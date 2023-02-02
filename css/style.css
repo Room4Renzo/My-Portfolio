@@ -1,0 +1,262 @@
+/* Sets border box, box sizing to all elements so that any padding changes don't need to be calculated seperately */
+* {
+  box-sizing: border-box;
+}
+
+/* Changes the padding of all (h1-h6) tags to 0 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+
+/* Changes the font size of all text in p tags */
+p {
+  font-size: 1.9rem;
+}
+
+/* Changes the font (family) and line height of text within the body tag and sets background colour to black */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: black;
+}
+
+/* makes the header display as flex with 100% responsive width. Also justifies items in the header to have even space between them */
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 5%;
+}
+
+
+/* Adds selective padding around the h1 in the header and sets the text colour to lime and sets minimum possible width on resizing to 20%*/
+header h1 {
+  padding: 0px 1px 1px 1px;
+  min-width: 20%;
+  color: lime;
+}
+
+/* Sets display of the navigation to flex, centers them vertically and justifies them horizontally to have even space in between */
+nav {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* displays navigation items inline (next to eachother) and justifies them to the end of their flex box. Also adds padding all around */
+nav li {
+  display:inline-flex;
+  justify-content: flex-end;
+  padding-left: 8%;
+}
+
+/* changes the style of all links to have a dotted lime underline */
+a {
+  text-decoration: underline lime;
+  text-decoration-style: dotted;
+  color: lime;
+  font-size: 1.4em;
+}
+
+/* Changes the underline style to wavy when hovered over */
+a:hover {
+  text-decoration-style: wavy;
+  color: lime;
+}
+
+/* Sets the image for the herobanner, display type to cover, height to 200px and its position to relative */
+.heroBanner {
+  background-image: url(../images/Matrix\ City.jpg);
+  background-size: cover;
+  height: 200px;
+  position: relative;
+
+}
+
+/* sets the width of the section with id "page-section" to display at 100% of available width*/
+#page-section {
+  width: 100%;
+}
+
+/* sets the position, background colour, and text colour of the element with class "title" (Room4Renzo) */
+#title {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  background-color: black;
+  color: lime;
+}
+
+/* Put my about stuff here */
+
+/* sets display of the whole about section to flex, with an all around padding of 3% */
+#about {
+  display: flex;
+  padding: 3%;
+
+}
+
+/* changes colour of paragraph text in the about section and aligns them by extending them on the y axis without distorting in the x */
+#about p {
+  align-items: stretch;
+  color: lime;
+}
+
+/* sets the width of this section to 15% and creates a border to the right of it */
+#about-1 {
+  width: 15%;
+  border-right: solid 8px lime;
+}
+
+/* changes the font styling of the h2 item on the left and text colour to lime*/
+#about-1 h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-style: italic;
+  color: lime;
+}
+
+/* sets section width to 85%, padding to specific values, a background image and its scaling */
+#about-2 {
+  width: 85%;
+  padding: 0% 3% 0% 3%;
+  background-image: url(../images/Portfolio-avatar.png);
+  background-size: contain;
+}
+
+/* sets work to display as flex with 3% padding all around */
+#work {
+  display: flex;
+  padding: 3%;
+}
+
+/* sets width to 15% of "work" with lime border to the right */
+#work-1 {
+  width: 15%;
+  border-right: solid 8px lime;
+}
+
+/* applies font styling and color */
+#work-1 h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-style: italic;
+  color: lime;
+}
+
+
+#work-2 {
+  display: grid;
+  width: 85%;
+  max-height: 40%;
+  padding: 0% 3% 0% 3%;
+  grid: 1fr / auto auto;
+  gap: 0.75em;
+  grid-template-areas:
+  "matrix-code matrix-code"
+  "blackjack rps"
+  "accessibility placeholder";
+}
+
+#placeholder {
+  grid-area: placeholder;
+  border: solid 5px lime;
+  background-image: url(../images/Placeholder.jpg);
+  height: 140px;
+}
+
+#blackjack {
+  grid-area: blackjack;
+  border: solid 5px lime;
+  background-image: url(../images/BlackJack.jpg);
+  height: 140px;
+}
+
+#accessibility {
+  grid-area: accessibility;
+  border: solid 5px lime;
+  background-image: url(../images/Accessible.jpg);
+  height: 140px;
+}
+
+#rps {
+  grid-area: rps;
+  border: solid 5px lime;
+  background-image: url(../images/RPS.jpg);
+  height: 140px;
+}
+
+#matrix-code {
+  grid-area: matrix-code;
+  border: solid 5px lime;
+  background-image: url(../images/Programming.jpg);
+  height: 280px;
+}
+
+#matrix-code p {
+  font-size: 1.6em;
+}
+
+.pics {
+display: flex;
+
+  position: relative;
+}
+
+.pic-title {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  color: lime;
+}
+
+.pic-title p {
+  font-size: 1.2rem;
+  background-color: black;
+  max-width: 60%;
+}
+
+
+
+#contact {
+  display: flex;
+  width: 100%;
+  display: flex;
+  padding: 3%;
+  background-color: black;
+}
+
+#contact-1 {
+  width: 15%;
+  border-right: solid 8px lime;
+  background-color: black;
+}
+
+#contact-1 h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-style: italic;
+  color: lime;
+}
+
+#contact-2 {
+  width: 85%;
+}
+
+#contact-2 ul {
+  display: flex;
+  list-style: none;
+  display: flex;
+  text-decoration: underline black;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+
+}

@@ -151,7 +151,8 @@ a:hover {
   color: lime;
 }
 
-
+/* displays this section as grid with 85% total screen width, a maximum height of 40% toal space. It also applies selective padding around the element */
+/* Sets 2 grid columns to be 1 frame each, applies a gap between all elements, and sets the display template areas for each element */
 #work-2 {
   display: grid;
   width: 85%;
@@ -165,6 +166,7 @@ a:hover {
   "accessibility placeholder";
 }
 
+/* Assignss grid area name for above template areas. Gives a solid lime border around the whole element, sets a fixed height and a background image */
 #placeholder {
   grid-area: placeholder;
   border: solid 5px lime;
@@ -172,6 +174,7 @@ a:hover {
   height: 140px;
 }
 
+/* same as above */
 #blackjack {
   grid-area: blackjack;
   border: solid 5px lime;
@@ -179,6 +182,7 @@ a:hover {
   height: 140px;
 }
 
+/* " */
 #accessibility {
   grid-area: accessibility;
   border: solid 5px lime;
@@ -186,13 +190,14 @@ a:hover {
   height: 140px;
 }
 
+/* " */
 #rps {
   grid-area: rps;
   border: solid 5px lime;
   background-image: url(../images/RPS.jpg);
   height: 140px;
 }
-
+/* " */
 #matrix-code {
   grid-area: matrix-code;
   border: solid 5px lime;
@@ -200,16 +205,19 @@ a:hover {
   height: 280px;
 }
 
+/* Sets font size of all p tage inside element with id "matrix-code" */
 #matrix-code p {
   font-size: 1.6em;
 }
 
+/* sets display of flex to all items in class and positions them relative */
 .pics {
 display: flex;
 
   position: relative;
 }
 
+/* positions the titles absolutely at the bottom of their parent, displays it as flex and changes colour */
 .pic-title {
   position: absolute;
   display: flex;
@@ -217,6 +225,7 @@ display: flex;
   color: lime;
 }
 
+/* Sets the font and background properties of each p in ""pic-title class */
 .pic-title p {
   font-size: 1.2rem;
   background-color: black;
@@ -224,21 +233,20 @@ display: flex;
 }
 
 
-
+/* Displays as flex so children align inline wth eachother, sets width to be 100% of screen size and adds all around padding */
 #contact {
   display: flex;
   width: 100%;
-  display: flex;
   padding: 3%;
-  background-color: black;
 }
 
+/* Sets fixed width and a border to the right */
 #contact-1 {
   width: 15%;
   border-right: solid 8px lime;
-  background-color: black;
 }
 
+/* Addse size weight and colour properties to h2 text */
 #contact-1 h2 {
   font-size: 1.6em;
   font-weight: bold;
@@ -246,6 +254,7 @@ display: flex;
   color: lime;
 }
 
+/* Sets width of section */
 #contact-2 {
   width: 85%;
 }
@@ -253,8 +262,8 @@ display: flex;
 #contact-2 ul {
   display: flex;
   list-style: none;
-  display: flex;
-  text-decoration: underline black;
+  text-decoration: underline lime;
+  text-decoration-style: dotted;
   width: 80%;
   align-items: center;
   justify-content: space-between;

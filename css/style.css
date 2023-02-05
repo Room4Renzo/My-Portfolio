@@ -52,7 +52,7 @@ nav {
 
 /* displays navigation items inline (next to eachother) and justifies them to the end of their flex box. Also adds padding all around */
 nav li {
-  display:inline-flex;
+  display: inline-flex;
   justify-content: flex-end;
   padding-left: 8%;
 }
@@ -129,6 +129,8 @@ a:hover {
   padding: 0% 3% 0% 3%;
   background-image: url(../images/Portfolio-avatar.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* sets work to display as flex with 3% padding all around */
@@ -161,9 +163,9 @@ a:hover {
   grid: 1fr / auto auto;
   gap: 0.75em;
   grid-template-areas:
-  "matrix-code matrix-code"
-  "blackjack rps"
-  "accessibility placeholder";
+    "matrix-code matrix-code"
+    "blackjack rps"
+    "accessibility placeholder";
 }
 
 /* Assignss grid area name for above template areas. Gives a solid lime border around the whole element, sets a fixed height and a background image */
@@ -197,6 +199,7 @@ a:hover {
   background-image: url(../images/RPS.jpg);
   height: 140px;
 }
+
 /* " */
 #matrix-code {
   grid-area: matrix-code;
@@ -212,7 +215,7 @@ a:hover {
 
 /* sets display of flex to all items in class and positions them relative */
 .pics {
-display: flex;
+  display: flex;
 
   position: relative;
 }

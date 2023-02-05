@@ -6,9 +6,9 @@ I have made a personal/professional Portfolio containing different projects I wo
 - Contains a personal short about me section and an avatar of me
 - A prework study guide with notes on HTML, JavaScript, CSS and Git
 - A Blackjack game played in the browser 
- - A rock, paper, scissors game played through alerts in browser
- - A refactored website that enhances accessibility
- - I hope to replace each project as i gain more experience and create more applications/projects
+- A rock, paper, scissors game played through alerts in browser
+- A refactored website that enhances accessibility
+- I hope to replace each project as i gain more experience and create more applications/projects
  - I struggled with displaying the images correctly in the grid so i just edited them to the desired size in photoshop
 
 
